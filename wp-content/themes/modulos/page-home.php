@@ -16,10 +16,20 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-
+<h1>Modulos auto administrables disponibles para Comercio 4</h1>
+		<h2>Modulo de tabs.</h2>
 		<?php
 			include get_template_directory() . '/assets/modulos/modulo-product-tabs/loop-modulo-product-tabs.php';
 		?>
+
+		<hr>
+
+		<h2>Modulo de banner</h2>
+		<?php
+			include get_template_directory() . '/assets/modulos/modulo-product-tabs/loop-modulo-product-tabs.php';
+		?>
+
+
 
 	</main><!-- #main -->
 

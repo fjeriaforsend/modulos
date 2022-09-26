@@ -103,3 +103,4 @@ ehthumbs.db
 *.tar
 *.zip
 .maintenance
+wp-config.php
