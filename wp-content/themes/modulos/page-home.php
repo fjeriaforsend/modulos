@@ -15,7 +15,7 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+	<main id="primary" class="site-main container">
 <h1>Modulos auto administrables disponibles para Comercio 4</h1>
 		<h2>Modulo de tabs.</h2>
 		<?php
@@ -26,7 +26,7 @@ get_header();
 
 		<h2>Modulo de banner</h2>
 		<?php
-			include get_template_directory() . '/assets/modulos/modulo-product-tabs/loop-modulo-product-tabs.php';
+			include get_template_directory() . '/assets/modulos/modulo-banner/loop-modulo-banner.php';
 		?>
 
 

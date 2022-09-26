@@ -19,7 +19,7 @@
                 $args = array(
                     'post_type' => 'product_tabs',
                     'orderby' => 'date',
-                    'order' => 'DESC',
+                    'order' => 'ASC',
                     'paged' => $paged,
                     'posts_per_page' => $post_per_page
                 );
@@ -85,7 +85,8 @@
                                 <figcaption class="p-3 w-100 row col-modulo-product-tabs">
                                 
                                     <span class="col-12 cont-product-tabs"><?php echo get_the_excerpt(); ?>
-                                        <a class="boton-cont-product-tabs" href="<?php the_field('link_a_categoria'); ?>"><?php echo get_the_title()?> Disponibles</a>
+                                        <a class="boton-cont-product-tabs" href="<?php the_field('link_a_categoria'); ?>">                                     </a>
+                                    
                                     </span>
                                     </caption>
                             </figure>

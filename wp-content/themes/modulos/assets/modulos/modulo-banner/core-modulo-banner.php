@@ -7,7 +7,7 @@ add_action( 'init', 'banner', 0 );
 function banner() {
 
 	$labels = array(
-		'name'                  => _x( 'banner', 'Post Type General Name', 'banner' ),
+		'name'                  => _x( 'Banner', 'Post Type General Name', 'banner' ),
 		'singular_name'         => _x( 'banner', 'Post Type Singular Name', 'banner' ),
 		'menu_name'             => __( 'banner', 'banner' ),
 		'name_admin_bar'        => __( 'banner', 'banner' ),
@@ -39,7 +39,7 @@ function banner() {
 		'label'                 => __( 'banner', 'banner' ),
 		'description'           => __( 'banner', 'banner' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'thumbnail', 'custom-fields', 'page-attributes', 'excerpt' ),
+		'supports'              => array( 'title', 'thumbnail', 'custom-fields'),
 		'taxonomies'            => array( 'categoria-banner', 'etiqueta-banner', ), 
 		'rewrite' => true,
 		'hierarchical'          => true,
@@ -47,7 +47,7 @@ function banner() {
 		'show_ui'               => true, 
 		'show_in_menu'          => true,
 		'menu_position'         => 10,
-		'menu_icon'             => 'dashicons-book-alt',
+		'menu_icon'             => 'dashicons-images-alt2',
 		'menu_position' => null,
 		'query_var' => true,
 		'show_in_admin_bar'     => true,
