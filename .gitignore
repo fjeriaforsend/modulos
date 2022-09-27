@@ -85,6 +85,7 @@ ehthumbs.db
 # Logs, databases and misc. #
 #############################
 *.log
+*.sql
 *.sqlite
 *.sass-cache
 
