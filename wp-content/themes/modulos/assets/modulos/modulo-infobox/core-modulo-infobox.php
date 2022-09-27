@@ -39,7 +39,7 @@ function infobox() {
 		'label'                 => __( 'infobox', 'infobox' ),
 		'description'           => __( 'infobox', 'infobox' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'thumbnail', 'custom-fields', 'page-attributes', 'excerpt' ),
+		'supports'              => array( 'title','custom-fields'),
 		'taxonomies'            => array( 'categoria-infobox', 'etiqueta-infobox', ), 
 		'rewrite' => true,
 		'hierarchical'          => true,
@@ -47,7 +47,7 @@ function infobox() {
 		'show_ui'               => true, 
 		'show_in_menu'          => true,
 		'menu_position'         => 10,
-		'menu_icon'             => 'dashicons-book-alt',
+		'menu_icon'             => 'dashicons-schedule',
 		'menu_position' => null,
 		'query_var' => true,
 		'show_in_admin_bar'     => true,
@@ -122,51 +122,3 @@ function display_infobox( $infoboxquery ) {
    }
    
    add_filter( 'pre_get_posts', 'display_infobox' );
-
-   if( function_exists('acf_add_local_field_group') ):
-
-	acf_add_local_field_group(array(
-		'key' => 'group_628f7d40a377c',
-		'title' => 'campos iconos infobox',
-		'fields' => array(
-			array(
-				'key' => 'field_628f7d4fe3380',
-				'label' => 'infobox_icono',
-				'name' => 'infobox_icono',
-				'type' => 'text',
-				'instructions' => '',
-				'required' => 0,
-				'conditional_logic' => 0,
-				'wrapper' => array(
-					'width' => '',
-					'class' => '',
-					'id' => '',
-				),
-				'default_value' => '',
-				'placeholder' => '',
-				'prepend' => '',
-				'append' => '',
-				'maxlength' => '',
-			),
-		),
-		'location' => array(
-			array(
-				array(
-					'param' => 'post_type',
-					'operator' => '==',
-					'value' => 'infobox',
-				),
-			),
-		),
-		'menu_order' => 0,
-		'position' => 'normal',
-		'style' => 'default',
-		'label_placement' => 'top',
-		'instruction_placement' => 'label',
-		'hide_on_screen' => '',
-		'active' => true,
-		'description' => '',
-		'show_in_rest' => 0,
-	));
-	
-	endif;		

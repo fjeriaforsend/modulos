@@ -11,7 +11,7 @@
         <div class="modulo-product-tabs-page-modulo-product-tabs row d-flex justify-content-center flex-column align-items-center">
             <ul class="nav nav-tabs" id="moduloTabs" role="tablist">
                 <?php
-                $i = 1;
+                $i = 0;
                 $e = 0;
                 $temp = $wp_query;
                 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -39,7 +39,7 @@
                                                                 echo $post->post_name; ?>-tab" data-bs-toggle="tab" data-bs-target="#<?php global $post;
                                                                 echo $post->post_name; ?>" type="button" role="tab" aria-controls="<?php global $post;
                                                                 echo $post->post_name; ?>" aria-selected="true">
-                                <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" class="img-fluid" alt="">
+                                <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" class="img-fluid">
  
                                 <h5 style="color:<?php the_field('color_texto');?>;" class="titulo-aprender parrafo-sm"><i style="color:<?php the_field('color_icono');?>;" class="<?php the_field('icono_pestana')?>"></i><?php echo get_the_title(); ?></h5>
 
@@ -60,7 +60,7 @@
 
             <div class="tab-content" id="moduloTabsContent">
                 <?php
-                $i = 1;
+                $i = 0;
                 $e = 0;
                 $temp = $wp_query;
                 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -75,7 +75,7 @@
                 $wp_query = new WP_Query($args);
                 if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
-                        <div class="tab-pane fade <?php if ($i == 0) {
+                        <div class="tab-pane fade <?php if ($i == 1) {
                                                         echo "show active";
                                                     }; ?>" id="<?php global $post;
                                                                 echo $post->post_name; ?>" role="tabpanel" aria-labelledby="<?php global $post;

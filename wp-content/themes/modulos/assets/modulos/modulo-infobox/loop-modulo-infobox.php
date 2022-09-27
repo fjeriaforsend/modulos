@@ -22,12 +22,12 @@
 						<a class="d-inline-block w-100" href="<?php the_permalink(); ?>">
 							<div class="contendor-iconos">
 								<figure class="color_iconos infobox-icono infobox-<?php the_ID(); ?>">
-								<?php the_field('infobox_icono');?>
+								<?php the_field('iconos_infobox');?>
 									<img class="accesibility-img d-none" src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" alt="<?php echo get_the_title(); ?>">
 								</figure>
 								<div class="texto_interior_campos_home">
-									<div class="color_texto_iconos infobox-box infobox-<?php the_ID(); ?>"><h3><?php echo get_the_title(); ?></h3></div>
-									<div class="color_texto_iconos infobox-box infobox-<?php the_ID(); ?>"><p><?php echo get_the_excerpt(); ?></p></div>
+									<div class="color_texto_iconos infobox-box infobox-<?php the_ID(); ?>"><h3><?php the_field('titulo_info_box'); ?></h3></div>
+									<div class="color_texto_iconos infobox-box infobox-<?php the_ID(); ?>"><p><?php the_field('texto_info_box'); ?></p></div>
 								</div>
 							</div>
 						</a>

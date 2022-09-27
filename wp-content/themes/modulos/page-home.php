@@ -16,8 +16,21 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main container">
-<h1>Modulos auto administrables disponibles para Comercio 4</h1>
-		<h2>Modulo de tabs.</h2>
+
+
+
+	<h1>Modulos auto administrables disponibles para Comercio 4</h1>
+
+	<h2>Modulo Info box</h2>
+<?php
+	include get_template_directory() . '/assets/modulos/modulo-infobox/loop-modulo-infobox.php';
+?>
+
+<hr>
+
+
+
+	<h2>Modulo de tabs.</h2>
 		<?php
 			include get_template_directory() . '/assets/modulos/modulo-product-tabs/loop-modulo-product-tabs.php';
 		?>
@@ -29,6 +42,19 @@ get_header();
 			include get_template_directory() . '/assets/modulos/modulo-banner/loop-modulo-banner.php';
 		?>
 
+<hr>
+
+<h2>Modulo card Maker</h2>
+<?php
+	include get_template_directory() . '/assets/modulos/modulo-boxinfo/loop-modulo-boxinfo.php';
+?>
+
+<h2>Modulo parallax</h2>
+<?php
+	include get_template_directory() . '/assets/modulos/modulo-parallax-block/loop-parallax-block.php';
+?>
+
+<hr>
 
 
 	</main><!-- #main -->
