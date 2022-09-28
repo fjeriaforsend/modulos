@@ -14,12 +14,19 @@
 
 get_header();
 ?>
-
-	<main id="primary" class="site-main container">
-
-
-
 	<h1>Modulos auto administrables disponibles para Comercio 4</h1>
+<hr>
+
+
+<?php include get_template_directory() . '/assets/modulos/modulo-slider/loop-modulo-slider.php';?>
+
+
+
+
+
+
+
+<main id="primary" class="site-main container">
 
 	<h2>Modulo Info box</h2>
 <?php

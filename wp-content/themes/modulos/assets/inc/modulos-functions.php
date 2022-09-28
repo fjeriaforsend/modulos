@@ -1,6 +1,10 @@
 <?php
 
 //modulos.
+
+//modulo slider
+
+include get_template_directory() . '/assets/modulos/modulo-slider/core-modulo-slider.php';
 //modulo tabs
 include get_template_directory() . '/assets/modulos/modulo-product-tabs/core-modulo-product-tabs.php';
 
@@ -18,3 +22,10 @@ include get_template_directory() . '/assets/modulos/modulo-parallax-block/core-p
 //Módulo infobox
 
 include get_template_directory() . '/assets/modulos/modulo-infobox/core-modulo-infobox.php';
+
+
+
+//modulo woocommerce
+//Módulo calculador de cuotas
+
+//include get_template_directory() . '/assets/modulos/modulo-cuotas/modulo-cuotas.php';
