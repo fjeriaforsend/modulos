@@ -1,7 +1,10 @@
-<style>
-<?php include get_template_directory() . '/assets/modulos/modulo-boxinfo/modulo-boxinfo.css';
-?>
-</style>
+<script>
+var css = document.createElement('css');
+css.src ='../wp-content/themes/modulos/assets/modulos/modulo-boxinfo/modulo-boxinfo.css';
+css.type = 'text/css';
+css.id='hola-demo';
+document.getElementsByTagName('head')[0].appendChild(css);
+</script>
 
 <div class="container-fluid my-3 box-info-container">
 

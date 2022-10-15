@@ -26,7 +26,7 @@ define( 'DB_NAME', 'modulos' );
 define( 'DB_USER', 'modulos' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'modulos' );
+define( 'DB_PASSWORD', 'IeVj1xUmNtVxvNLy' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
